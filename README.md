@@ -13,7 +13,7 @@ Clock using an Arduino UNO R3, LCD1602, &amp; RTC DS3231
 </ul>
 <!--- Schematic Diagram !--->
 <h2>Schematic</h2>
-<img src = "https://4.bp.blogspot.com/yGKnDue2d4s/V7FKZIpT_aI/AAAAAAAAAjM/x6ymeUM7dPQIYxDF7Zf0gHShdZVsBk6eQCLcB/s1600/Arduino_Clock.jpg" alt="Breadboard Schematic" width="600" height="400">
+<img src="https://4.bp.blogspot.com/-yGKnDue2d4s/V7FKZIpT_aI/AAAAAAAAAjM/x6ymeUM7dPQIYxDF7Zf0gHShdZVsBk6eQCLcB/s1600/Arduino_Clock.jpg" alt="Breadboard Schematic" width="400" height="200">
 <!-- Description !--->
 <h2>Description</h2>
 <p>
@@ -21,14 +21,20 @@ Clock using an Arduino UNO R3, LCD1602, &amp; RTC DS3231
     In order for the program to function properly changes were made to the DS3231.h library, since they 
     did not contain functions to set the hours, minutes, day, and month separately. I uploaded the library
     with the changes to this repository. After compiling and uploading the code to the Arduino UNO, the
-    user will have to set the date and time using the appropriate push buttons (See description on the next section
-    for complete pin description). The on/off button is used to enable (on) or disable (off) the backlight of the LCD1602.
-    <br />
+    user will have to set the date and time using the appropriate push buttons (See the pin description).
+    <br /><br />
     The first row of the LCD1602 16x2 displays the date in the following format: MM/DD/YYYY.<br />
     The second row of the LCD1602 16x2 displays the current time in the following format: HH:MM:SS.<br />
-    This clock system is able to determine if the current year is a leap year or not.<br />
-    The clock system updates the date automatically.<br />
 </p>
+<h2>Clock System Features</h2>
+<ul>
+  <li>The clock system is able to determine if the current year is a leap year or not.</li>
+  <li>The user is able to reset the seconds on the clock.</li>
+  <li>The user is able to increment the minutes and hours on the clock.</li>
+  <li>The user is able to increment the day and month on the clock.</li>
+  <li>The date on the clock updates the date automatically.</li>
+  <li>The user may turn the backlight of the LCD1602 on and off using the switch</li>
+</ul>
 <h2>Arduino Pin Description</h2>
 <ul>
   <li>Digital Pin 8 is connected to the On/Off Switch to turn On/Off of the backlight of the LCD1602.</li>
