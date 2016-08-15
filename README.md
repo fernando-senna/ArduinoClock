@@ -1,4 +1,4 @@
-# ArduinoClock
+<h1>Arduino Clock</h1>
 Clock using an Arduino UNO R3, LCD1602, &amp; RTC DS3231
 
 <h2>Parts List</h2>
